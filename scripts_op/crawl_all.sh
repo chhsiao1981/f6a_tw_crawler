@@ -11,11 +11,11 @@ n="${BASH_ARGV[0]}"
 for ((j = 1; j <= ${n}; j++))
 do
   is_skip=false
-  #  6: unknown
+  #  6: 廚師證書資料集
   # 26: unknown
   # 27: unknown
   # 33: 2014 年 9 月餿水油受影響廠商 (過期)
-  # 69: 醫療器材相關資訊 (似乎是過期? 因為 68 也有類似資訊?)
+  # 69: 醫療器材詳細處方成分資料集
   # 92: unknown
   # 93: unknown
   for k in 6 26 27 33 69 92 93
