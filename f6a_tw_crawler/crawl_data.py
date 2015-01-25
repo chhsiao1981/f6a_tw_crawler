@@ -53,11 +53,9 @@ def crawl_data(no):
             f.write(content_json)
     '''
 
-    '''
     if content_csv:
         with open(filename_csv + '.raw', 'w') as f:
             f.write(content_csv)
-    '''
 
     if content_json:
         content_json = content_json.decode('utf-8')

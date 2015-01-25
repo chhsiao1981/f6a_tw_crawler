@@ -18,6 +18,7 @@ Usage
 * meta: ./scripts_op/crawl_all_meta.sh [n]
 * meta_json_to_csv: ./scripts_op/meta_json_to_csv.sh [n]
 * data: ./scripts_op/crawl_all.sh [n]
+* json_to_csv: ./scripts_op/json_to_csv.sh [json_filename] (good for broken csv files)
 
 Meta:
 -----

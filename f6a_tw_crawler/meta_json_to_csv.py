@@ -12,7 +12,7 @@ from f6a_tw_crawler import util
 from f6a_tw_crawler import util_pd
 from f6a_tw_crawler import util_lock
 
-df_columns = ['the_id', 'name', 'provider', 'the_type', 'update_date', 'desc', 'columns', 'the_url']
+df_columns = ['the_id', 'name', 'provider', 'the_type', 'update_date', 'desc', 'the_url', 'columns']
 
 
 def meta_json_to_csv(last_n):
