@@ -19,7 +19,20 @@ def json_to_csv(filename):
 
     the_struct = [_parse_struct(each_struct) for each_struct in the_struct]
 
+    filename_meta = re.sub(ur'json$', 'meta.json', re.sub('^data', 'data/meta', filename))
+
+    columns = []
+
+    with open(filename_meta, 'r') as f:
+        struct_meta = json.load(f)
+        if struct_meta:
+            columns = struct_meta[0].get('columns', [])
+            columns = [each_column.encode('utf-8') for each_column in columns]
+
     df = pd.DataFrame(the_struct)
+
+    if columns:
+        df = df[columns]
 
     out_filename = re.sub(ur'.json$', '.csv', filename)
 
