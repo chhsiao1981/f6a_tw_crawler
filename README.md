@@ -22,4 +22,4 @@ Usage
 
 Meta:
 -----
-https://docs.google.com/spreadsheets/d/1T4orerlQuaKZ8dGLJCJi02EgpFS2gTjSQMMsl7vB-HI/edit#gid=0
+https://github.com/chhsiao1981/f6a_tw_crawler/blob/master/data/meta/meta.csv
