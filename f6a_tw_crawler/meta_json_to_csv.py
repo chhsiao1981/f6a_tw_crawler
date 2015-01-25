@@ -35,7 +35,7 @@ def _str_or_list(x):
     if x.__class__.__name__ == 'unicode':
         return x.encode('utf-8')
     elif x.__class__.__name__ == 'list':
-        return json.dumps(x)
+        return ','.join([each_x.encode('utf-8') for each_x in x])
     else:
         return x
 
