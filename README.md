@@ -18,3 +18,7 @@ Usage
 * meta: ./scripts_op/crawl_all_meta.sh [n]
 * meta_json_to_csv: ./scripts_op/meta_json_to_csv.sh [n]
 * data: ./scripts_op/crawl_all.sh [n]
+
+Meta:
+-----
+https://docs.google.com/spreadsheets/d/1T4orerlQuaKZ8dGLJCJi02EgpFS2gTjSQMMsl7vB-HI/edit#gid=0
