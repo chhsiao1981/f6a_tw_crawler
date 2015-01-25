@@ -9,6 +9,10 @@ Introduction
 * 官方網站: http://data.fda.gov.tw
 * php 版本: https://github.com/kiang/data.fda.gov.tw
 
+Install
+-----
+virtualenv __; . __/bin/activate; pip install -r requirements.txt
+
 Usage
 -----
 * meta: ./scripts_op/crawl_all_meta.sh [n]
