@@ -2,7 +2,7 @@
 
 if [ "${BASH_ARGC}" != "1" ]
 then
-  echo "usage: craw_all.sh [n]"
+  echo "usage: crawl_all.sh [n]"
   exit
 fi
 

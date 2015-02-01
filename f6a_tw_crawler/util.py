@@ -597,11 +597,11 @@ def http_multipost_list(the_url_data, timeout=HTTP_TIMEOUT, cookies=None):
     return result
 
 
-def http_multiget(the_urls, timeout=HTTP_TIMEOUT, cookies=None):
+def http_multiget(the_urls, timeout=HTTP_TIMEOUT, cookies=None, headers=None):
     '''
     the_urls: [the_url]
     '''
-    rs = (grequests.get(u, timeout=timeout, cookies=cookies) for u in the_urls)
+    rs = (grequests.get(u, timeout=timeout, cookies=cookies, headers=headers) for u in the_urls)
     result_map = grequests.map(rs)
     try:
         result_map_text = [_grequest_get_content(each_result_map) for each_result_map in result_map]
